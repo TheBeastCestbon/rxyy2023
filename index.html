@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日新月异俱乐部 - 专注个人成长的社群</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/fortune.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-purple-800">日新月异俱乐部</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-purple-800">功能特点</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-purple-800">使用方法</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-purple-800">价格方案</a>
+                    <a href="#faq" class="text-gray-600 hover:text-purple-800">常见问题</a>
+                </div>
+                <button class="bg-purple-800 text-white px-6 py-2 rounded-full hover:bg-purple-700">
+                    开始申请
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-purple-50 to-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                探索你的人生成长路径
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                我们一直觉得好的人生一定是平衡的人生
+            </p>
+            <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+                <form id="fortuneForm" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" placeholder="您的姓名" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                    </div>
+                    <div>
+                        <input type="date" id="birthdate" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-purple-800 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                        开始申请
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">人生成长系统</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-purple-50">
+                    <h3 class="text-xl font-bold mb-4">写作输出</h3>
+                    <p class="text-gray-600">人生必备的表达和输出能力</p>
+                </div>
+                <div class="p-6 rounded-xl bg-purple-50">
+                    <h3 class="text-xl font-bold mb-4">沟通表达</h3>
+                    <p class="text-gray-600">好的关系是人生幸福的关键</p>
+                </div>
+                <div class="p-6 rounded-xl bg-purple-50">
+                    <h3 class="text-xl font-bold mb-4">时间管理</h3>
+                    <p class="text-gray-600">学会透过时间管理，提高自己的人生效率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">报名流程</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-800 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="font-bold mb-2">输入信息</h3>
+                    <p class="text-gray-600">填写基本个人信息</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-800 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="font-bold mb-2">智能解析</h3>
+                    <p class="text-gray-600">系统进行深度分析</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-800 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="font-bold mb-2">生成报告</h3>
+                    <p class="text-gray-600">获取详细成长报告</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-800 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="font-bold mb-2">专业建议</h3>
+                    <p class="text-gray-600">提供个性化指导</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">学员评价</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <p class="text-gray-600 mb-4">"在俱乐部学习最大的收获是，对我的工作和生活都很有帮助。"</p>
+                    <p class="font-bold">张先生，企业家</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <p class="text-gray-600 mb-4">"让我对未来更有信心和规划。"</p>
+                    <p class="font-bold">李女士，设计师</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <p class="text-gray-600 mb-4">"老师的解答和分析很全面，建议很实用，值得推荐。"</p>
+                    <p class="font-bold">王先生，教师</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">服务方案</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">基础版</h3>
+                    <p class="text-3xl font-bold mb-6">￥68<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 人生罗盘分析</li>
+                        <li>✓ 成长评级</li>
+                        <li>✓ 基本建议</li>
+                    </ul>
+                    <button class="w-full bg-purple-800 text-white py-2 rounded-lg hover:bg-purple-700">
+                        立即购买
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-purple-800">
+                    <h3 class="text-xl font-bold mb-4">专业版</h3>
+                    <p class="text-3xl font-bold mb-6">￥168<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 详细人生罗盘分析</li>
+                        <li>✓ 成长评级与分数</li>
+                        <li>✓ 专业建议指导</li>
+                        <li>✓ 带领学员实操</li>
+                    </ul>
+                    <button class="w-full bg-purple-800 text-white py-2 rounded-lg hover:bg-purple-700">
+                        立即购买
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">尊享版</h3>
+                    <p class="text-3xl font-bold mb-6">￥368<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 全方位人生罗盘分析</li>
+                        <li>✓ 成长评级与分数</li>
+                        <li>✓ VIP专属建议</li>
+                        <li>✓ 专业建议和实操指导</li>
+                        <li>✓ 一对一咨询服务</li>
+                    </ul>
+                    <button class="w-full bg-purple-800 text-white py-2 rounded-lg hover:bg-purple-700">
+                        立即购买
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">常见问题</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">成长分析的准确度如何？</h3>
+                    <p class="text-gray-600">我们运用专业的人生成长系统，结合现代数据分析技术，准确度较高。但所有分析仅供参考，建议理性对待。</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">如何保护我的个人信息？</h3>
+                    <p class="text-gray-600">我们采用严格的数据加密技术，确保您的个人信息安全。所有数据仅用于成长分析，绝不外泄。</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">分析报告多久可以获得？</h3>
+                    <p class="text-gray-600">基础版和专业版运势报告会立即生成，尊享版因包含人工分析，将在24小时内完成。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">人生成长</h4>
+                    <p class="text-gray-400">专业的成长分析平台</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">功能特点</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">价格方案</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">联系我们</h4>
+                    <p class="text-gray-400">邮箱：743759846@qq.com</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">关注我们</h4>
+                    <p class="text-gray-400">微信公众号：日新月异俱乐部</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>© 2024 一篇文章信息科技有限公司 版权所有</p>
+                <p class="mt-2"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" class="hover:text-white">浙ICP备2024138867号</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
